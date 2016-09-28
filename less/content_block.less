@@ -1,0 +1,46 @@
+.content_block{
+	width: 100%;
+	overflow: hidden;
+
+	&__wrapper_img,
+	&__wrapper_text{
+		float: left;
+	}
+	&__wrapper_img{
+		width: 30%;
+		padding-right: 20px;
+
+		&_right{
+			float: right;
+			padding-right: 0; 
+			padding-left: 20px;
+		}
+	}
+
+	&__wrapper_text{
+		width: 70%;
+	}
+
+	&__img{
+		max-width: 100%;
+	    display: block;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	&__text{
+		padding: 20px;
+	}
+	
+	@media all and (max-width: 767px) {
+		&__wrapper_img,
+		&__wrapper_text{
+			float: left;
+			width: 100%;
+			float: left;
+			padding: 0;
+
+		}
+	}
+	
+}

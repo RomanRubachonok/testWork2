@@ -1,0 +1,69 @@
+.elem{
+
+	width: 100px;
+	height: 100px;
+	border: 1px solid #fff;
+	margin: 5px;
+	display: table;
+	position: relative;
+
+	&_left{
+		float: left;
+	}
+
+	&__arrow,
+	&__circle,
+	&__bowtie{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__arrow{
+		&:after{
+			content: "";
+		    display: block;
+		    width: 100%;
+		    height: 4px;
+		    background-color: blue;
+		}
+		&:before{
+			content: "";
+		    display: block;
+		    margin: 0 auto;
+		    border: 20px solid transparent;
+		    width: 0;
+		    height: 0;
+		    border-left-color: blue;
+		    position: absolute;
+		    top: 50%;
+		    right: -20px;
+		    margin-top: -20px;
+		}
+	}
+	&__circle{
+		&:after{
+			content: "";
+		    display: block;
+		    width: 70px;
+		    height: 70px;
+		    border-radius: 100%;
+		    margin: 0 auto;
+		    background-color: blue;
+		}
+	}
+	&__bowtie{
+		&:after,
+		&:before{
+			content: "";
+		    display: block;
+		    margin: 0 auto;
+		    border: 20px solid transparent;
+		    width: 0;
+		    height: 0;
+		    border-left-color: blue;
+		    border-bottom-color: transparent;
+		    border-right-color: blue;
+		    border-top-color: transparent;
+		}
+	}
+}

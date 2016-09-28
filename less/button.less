@@ -1,0 +1,59 @@
+.button{
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 10px 20px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-shadow: none;
+	box-shadow: inset none;
+	text-decoration: none;
+	color: #fff;
+	
+	&:focus,
+	&:active:focus {
+		outline: thin dotted;
+		outline: 5px auto -webkit-focus-ring-color;
+		outline-offset: -2px;
+	}
+
+	&:hover,
+	&:focus {
+		color: #fff - 40%;
+		text-decoration: none;
+	}
+
+	&:active {
+		outline: 0;
+		background-image: none;
+	}
+
+	&[disabled] {
+		cursor: not-allowed;
+		pointer-events: none;
+		opacity: 0.65;
+		filter: alpha(opacity=65);
+	}
+	
+	&_red {
+		background-color: red;
+	}
+
+	&_blue {
+		background-color: blue;
+	}
+
+	&_green {
+		background-color: green;
+	}
+}

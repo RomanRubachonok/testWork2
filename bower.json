@@ -1,0 +1,6 @@
+{
+  "name": "testWork2",
+  "dependencies": {
+    "normalize-css": "~4.1.1"
+  }
+}

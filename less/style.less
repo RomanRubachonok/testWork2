@@ -1,0 +1,75 @@
+@import (less) "normalize-css/normalize.css";
+@import "variables.less";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import "menu";
+@import "content_block";
+@import "button";
+@import "form";
+@import "elems";
+
+.wrapper{
+	width: 100%;
+	height: 100%;
+
+	header,
+	footer{
+		width: 100%;
+		background-color: #cccccc;
+		padding: 15px;
+	}
+
+	header{
+	}
+	
+	.menu{
+		background-color: @bg-color-menu;
+	}
+
+	.first{
+		background: url(../img/bg2.jpg) top left no-repeat;
+		background-size: cover;
+	}
+
+	.last{
+		background: url(../img/bg.jpg) top left no-repeat;
+		background-size: cover;
+	}
+	.first,
+	.last{
+		padding: 20px 0;
+	}
+
+	
+}
+
+
+.clearfix{
+	&:after{
+		content: " ";
+	    display: table;
+	    clear: both;
+	}
+	&:before{
+		content: " ";
+	    display: table;
+	}
+}
+.w50{
+	width: 50%;
+	float: left;
+}
+.text-center{
+	text-align: center;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 1400px;
+}
